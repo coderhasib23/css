@@ -7,6 +7,106 @@
     <title>
       Color, Measuring Unit, font size, font-weight, height, width, alignment
     </title>
+    <style>
+      .color h1 {
+        color: forestgreen;
+      }
+      .height_width {
+        background-color: crimson;
+        color: honeydew;
+        width: 70%;
+        height: 400px;
+      }
+      .font {
+        font: italic small-caps bold 16px/0.8 Arial, sans-serif;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 2px; */
+        /* word-spacing: -1px; */
+      }
+      .note {
+        background-color: rgb(62, 246, 0);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="color">
+      <h1>There are several ways to set colors in CSS:</h1>
+      <ol>
+        <li>Named Color - Red</li>
+        <li>Hexadecimal Values - "#ff0000" (represent red color)</li>
+        <li>RGB Color - "rgb(255, 0, 0)" {represent red color}</li>
+        <li>HLS Color - "hsl(0, 100%, 50%)" {represent red color}</li>
+        <li>RGBA - RED GREEN BLUE ALPHA</li>
+      </ol>
+    </div>
+    <div class="height_width">
+      <h2>Here we Explore height and width with Measuring Units</h2>
+      <p>
+        There are several different types of measuring units in CSS that can be
+        used to specify lengths, sizes, and other dimensions:
+      </p>
+      <ol>
+        <li>
+          Pixels (px): Pixels are fixed-size units that are used to specify the
+          size of elements on a web page. One pixel is equal to one dot on a
+          computer screen.
+        </li>
+        <li>
+          Ems (em): Ems are relative units that are used to specify the size of
+          text. One em is equal to the current font size.
+        </li>
+        <li>
+          Rems (rem): Rems are also relative units that are used to specify the
+          size of text. One rem is equal to the root element's font size.
+        </li>
+        <li>
+          Points (pt): Points are fixed-size units that are used to specify the
+          size of text. One point is equal to 1/72 of an inch.
+        </li>
+        <li>
+          Percentages (%): Percentages are relative units that are used to
+          specify the size of elements relative to their parent elements. For
+          example, if an element's width is set to 50%, it will be half the
+          width of its parent element.
+        </li>
+        <li>
+          Viewport units (vw, vh, vmin, vmax): Viewport units are relative units
+          that are used to specify the size of elements relative to the size of
+          the viewport (the visible area of a web page). For example, if an
+          element's width is set to 50vw, it will be 50% of the viewport's
+          width.
+        </li>
+      </ol>
+    </div>
+
+    <div class="font">
+      <h2>Here Check out some Use case of Fonts:</h2>
+      <ol>
+        <li>font-style: Specifies the font style (normal, italic, oblique)</li>
+        <li>font-variant: Specifies the font variant (normal, small-caps)</li>
+        <li>font-weight: Specifies the font weight (normal, bold, etc.)</li>
+        <li>font-size: Specifies the font size</li>
+        <li>line-height: Specifies the line height</li>
+        <li>font-family: Specifies the font family</li>
+        <li>
+          Letter spacing: The letter spacing value specifies the amount of space
+          between characters in a piece of text.
+        </li>
+        <li>
+          Word spacing: The word spacing value specifies the amount of space
+          between words in a piece of text.
+        </li>
+      </ol>
+      <strong
+        >Font shorthand - font: italic small-caps bold 16px/1.5 Arial,
+        sans-serif;
+      </strong>
+      <p class="note">
+        This sets the font style to italic, the font variant to small-caps, the
+        font weight to bold, the font size to 16px, the line height to 1.5, and
+        the font family to Arial. If Arial is not available, the browser will
+        use a sans-serif font.
+      </p>
+    </div>
+  </body>
 </html>
