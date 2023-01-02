@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>id & class</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      .container {
+        background-color: turquoise;
+        color: rgb(0, 0, 0);
+      }
+      #header {
+        background-color: blue;
+        color: white;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>2-3 Simple CSS selectors, id, class, tag, universal, ID vs class</h2>
+      <p>
+        In general, it is a good practice to use
+        <strong id="test"
+          >class selectors when you want to style multiple elements</strong
+        >
+        on a page in the same way, and to use
+        <mark
+          >id selectors when you want to style a specific element on a
+          page.</mark
+        >
+      </p>
+    </div>
+    <div id="header">This is the header Here I am use ID</div>
+    <p class="highlight">This text is highlighted Here I am using class</p>
+    <p class="highlight">So is this text Here I am using class</p>
+    <div class="note container">
+      SO Here I am Learning: ID CLASS AND UNIVERSAL SELECTOR
+    </div>
+  </body>
 </html>
