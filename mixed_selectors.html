@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2-4 Mixed Selectors: div, span, combined, tag, class, special</title>
+    <style>
+      .highlight {
+        background-color: #fa8072;
+        color: white;
+      }
+      .group {
+        background-color: #3c6255;
+        color: white;
+      }
+      input[type="text"] {
+        background-color: yellow;
+      }
+      pre code {
+        background-color: #eee;
+        border: 1px solid #999;
+        display: block;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      Try Love this <span class="highlight">Journey</span> Span Using Here
+    </h3>
+
+    <div class="group">
+      <h1>This group selector we select with div</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cupiditate
+        eos modi omnis laboriosam enim eligendi officia est fugit, minima
+        sapiente corrupti laudantium quasi veniam. Omnis, quod nesciunt nihil
+        dignissimos repellendus unde iure ipsa, aliquam cumque eveniet
+        laboriosam quidem possimus pariatur. Natus harum ipsa est nihil minus
+        rem provident sunt.
+      </p>
+    </div>
+    <div>
+      <form action="">
+        <label for="username"
+          >Username: (Here we use <mark>attribute selector</mark>)</label
+        >
+        <input type="text" name="" id="" />
+      </form>
+    </div>
+    <div>
+      <pre>
+Selector = element (tag name), id, class, 
+            ⌨️  Element selectors - h1  p
+            ⌨️  Extension2: Color Highlight
+            ⌨️  Grouping selectors = h1, p 
+            ⌨️ Nested selectors = 
+            
+            make 2 a link one is in the ul li and another is outside of ul li then use the nested selector 
+           
+            <code>
+                ul li a{
+                color: green; 
+                }
+            </code>
+           
+            
+            ⌨️ Universal selectors = * 
+            ⌨️ ID selectors = #
+            ⌨️  class selectors = . 
+            ⌨️  Extension3: HTML to CSS autocompletion = html uses to css 
+            ⌨️  Attribute selectors
+            
+            <code>
+            element[attr]{
+            
+            }
+            
+            //demo
+            input[type]{
+                background-color:green;
+            }
+            
+            //if i want based on attb value
+            input[type:"text"]{
+                background-color:green;
+            }
+            </code>
+            
+            ⌨️  Pseudo class & Pseudo element selectors
+            
+            : is pseudo class = focus, hover, disable and so on
+            
+            :: is pseudo element = before after first letter last letter and so on 
+            
+            for test use a pseudo class for hover 
+            
+            before after content use korte hoy 
+            
+            ⌨️  descendant selector (space) - act like parents 
+                <code>
+                    div h1{
+                        background-color: red;
+                    }
+                </code>
+
+            ⌨️  child selector (>) = for immediate child 
+            
+                <code>
+                    .div1 > p{
+                    color : red;
+                </code>
+            
+            ⌨️  Adjacent & General siblings  selectors 
+            
+            adjacent sibling selector (+)
+            
+            after the we have any other element after the div and i want to select first **one** after the div
+            
+             then use divname + element { }
+            
+                    <code>
+                    .div1 + p {
+                    color: green;
+                    }
+                    </code>
+            
+            general sibling selector (~)
+            
+            after the div if i want select **all** element then i am using ~ selector</pre>
+    </div>
+    <div>
+      <button>
+        <a href="border_margin_padding.html" rel="noopener noreferrer"
+          >Next Lesson</a
+        >
+      </button>
+    </div>
+  </body>
+</html>
